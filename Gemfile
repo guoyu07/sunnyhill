@@ -66,9 +66,6 @@ group :test do
   gem "shoulda-matchers"
   gem "factory_girl_rails"
   gem "cucumber-rails", require: false
-  gem "capybara"
-  gem "capybara-webkit"
-  gem "selenium-webdriver"
   gem "simplecov", require: false
   gem "simplecov-rcov", require: false
   gem "rb-fsevent", require: false
