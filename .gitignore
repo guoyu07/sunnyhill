@@ -2,7 +2,6 @@
 *.sassc
 .sass-cache
 capybara-*.html
-/.bundle
 /vendor/bundle
 /log/*
 /tmp/*
