@@ -3,9 +3,8 @@ class UsersController < ApplicationController
   before_action :set_user
 
   def new
-  #コメント  
-    
-    
+    #コメント  
+    # sasaki comment
   end
   
   def test
