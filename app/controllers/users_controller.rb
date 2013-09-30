@@ -7,9 +7,6 @@ class UsersController < ApplicationController
     # sasaki comment
   end
   
-  def test
-  end
-
   def create
     if @user.update(user_params)
       redirect_to root_url, notice: '更新しました'
