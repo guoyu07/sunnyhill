@@ -3,9 +3,6 @@ class UsersController < ApplicationController
   before_action :set_user
 
   def new
-  #コメント  
-    
-    
   end
   
   def create
