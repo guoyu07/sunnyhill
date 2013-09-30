@@ -3,6 +3,9 @@ class UsersController < ApplicationController
   before_action :set_user
 
   def new
+    
+    
+    
   end
   
   def create
