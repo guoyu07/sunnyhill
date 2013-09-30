@@ -41,7 +41,9 @@
               %li.nav-header Sidebar
               %li= link_to 'login', new_user_session_path
               %li= link_to 'logout', destroy_user_session_path, method: :delete
+              %li= link_to 'プロフィール変更', new_user_path
               %li= current_user.email if current_user
+              %li= current_user.gender_label if current_user
         .span9
           = yield
     

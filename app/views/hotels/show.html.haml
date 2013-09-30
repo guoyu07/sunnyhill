@@ -1,0 +1,11 @@
+%p#notice= notice
+
+%dl.dl-horizontal
+  %dt= t 'activerecord.attributes.hotel.name'
+  %dd= @hotel.name
+%dl.dl-horizontal
+  %dt= t 'activerecord.attributes.hotel.price'
+  %dd= @hotel.price
+
+= link_to t('helpers.links.edit'), edit_hotel_path(@hotel), class: 'btn btn-primary'
+= link_to t('helpers.links.back'), hotels_path, class: 'btn btn-primary'
