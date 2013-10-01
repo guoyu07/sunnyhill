@@ -3,13 +3,8 @@ class UsersController < ApplicationController
   before_action :set_user
 
   def new
-    #コメント  
-    # sasaki comment
   end
   
-  def test
-  end
-
   def create
     if @user.update(user_params)
       redirect_to root_url, notice: '更新しました'
@@ -17,6 +12,7 @@ class UsersController < ApplicationController
       render action: 'new'
     end
   end
+  
   
   private
   

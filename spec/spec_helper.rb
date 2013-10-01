@@ -4,10 +4,10 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
 require 'spork'
-require 'capybara/rails'
-require 'capybara/rspec'
-require 'capybara-webkit'
-require 'selenium-webdriver'
+#require 'capybara/rails'
+#require 'capybara/rspec'
+#require 'capybara-webkit'
+#require 'selenium-webdriver'
 
 Spork.prefork do
 end
@@ -15,9 +15,9 @@ end
 Spork.each_run do
 end
 
-Capybara.current_driver = :selenium
-Capybara.javascript_driver = :webkit
-Capybara.app_host = "http://localhost:3000"
+#Capybara.current_driver = :selenium
+#Capybara.javascript_driver = :webkit
+#Capybara.app_host = "http://localhost:3000"
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -70,7 +70,7 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
-  config.include Capybara::DSL, type: :feature
+  #config.include Capybara::DSL, type: :feature
 
   config.include Devise::TestHelpers, type: :controller
   config.extend ControllerMacros, type: :controller
