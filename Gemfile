@@ -69,6 +69,7 @@ group :test do
   gem "simplecov", require: false
   gem "simplecov-rcov", require: false
   gem "rb-fsevent", require: false
+  gem "spork", "~> 1.0.0rc3"
   gem "guard-rspec"
   gem "guard-cucumber"
   gem "guard-spork"
